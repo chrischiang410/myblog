@@ -13,11 +13,12 @@
           <% if (post.link || post.title){ %>
               <%- partial('post/title', {class_name: 'article-title'}) %>
           <% } %>
-
+            <% if ('about/index.html' !== post.path) { %>
             <div class="article-meta">
               <i class="fa fa-calendar"></i>
               <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date, 'MMM DD, YYYY') %></time>
             </div>
+          <% } %>
           </header>
 
 
@@ -38,7 +39,7 @@
               </a>
             </p>
           <% } %>
-
+          <% if ('about/index.html' !== post.path) { %>
           <footer class="article-footer">
             <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
             <% if (post.comments && config.disqus_shortname){ %>
@@ -46,7 +47,7 @@
             <% } %>
             <%- partial('post/tag') %>
           </footer>
-
+          <% } %>
         </div>
 
         <% if (!index){ %>
