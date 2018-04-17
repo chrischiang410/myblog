@@ -1,0 +1,21 @@
+.work-comp{
+    display:inline-block;
+    margin: 15px 0;
+    margin-bottom: 5px;
+    width:50%;
+    font-size: 1.4em;
+    font-weight: bold;
+    line-height: 1.1em;
+}
+.work-time{
+    display:inline-block;
+    margin:5px -4px;
+    width:50%;
+    text-align: right;
+}
+.work-title{
+    margin-top:0px;
+}
+.work-info{
+    margin-top: 15px !important;
+}
