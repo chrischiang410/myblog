@@ -1,13 +1,8 @@
 ---
-title: Form-Driven / Model-Driven
+title: Model-Driven
 date: 2016-11-13 11:12:39
 tags:
 
----
-
-## Form-Driven
-
-##### 還沒準備, 加油好嗎
 ---
 
 ## Model-Driven
@@ -15,13 +10,13 @@ tags:
 ### 實作 Model-Driven , 必須要：
 
 * 先 import `ReactiveFormModule` 到 `app.module.ts`
-* 開啟 html, 在 Form 元素加上 `[formGroup]="form"`
+* 開啟 html, 在 Form 元素加上 `[formGroup]="form"` 
 ```htmlembedded=
 <form [formGroup]="form">
  	...
 </form>
 ```
-
+<!--more-->
 ----
 
 * 回到 ts, import `FormGroup` 與 `FormControl`兩個類別, 並建立名為 `form` 的 form model 
