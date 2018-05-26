@@ -1,4 +1,18 @@
+.self-info{
+    width: 75%;
+    margin: 0 auto;
+}
+.self-info > ul{
+    display: inline-block;
+    vertical-align: top;
+    list-style-type: none;
+}
+.self-info > ul > li{
+    list-style-type: none;
+}
 .my-photo{
+    display: inline-block;
+    width: 250px;
     height: 350px;
     background-size: contain;
     background-repeat: no-repeat;
