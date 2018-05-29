@@ -1,22 +1,53 @@
 .self-info{
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
 }
-.self-info > ul{
+.self-info > * > ul{
     display: inline-block;
     vertical-align: top;
     list-style-type: none;
+    margin: 15px 0;
 }
-.self-info > ul > li{
+.self-info > * > ul > li{
     list-style-type: none;
 }
 .my-photo{
     display: inline-block;
     width: 250px;
     height: 350px;
-    background-size: contain;
+    box-shadow: 5px 5px 15px grey;
+    background-size: cover;
     background-repeat: no-repeat;
     background-image: url(./images/IMG_4277.JPG)
+}
+.my-info{
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 295px);
+    margin: 0 0 0 40px;
+}
+.my-info > h2 {
+    margin: 0 0 1.1em 0;
+}
+.my-info > ul > li {
+    white-space: nowrap;
+    overflow: hidden;
+}
+.my-info > ul > li:first-child {
+    width: 16em;
+    animation: typing 2s steps(16, end);
+}
+.my-info > ul > li:nth-child(2) {
+    width: 30em;
+    animation: typing2 8s steps(30, end);
+}
+.my-info > ul > li:nth-child(3) {
+    width: 30em;
+    animation: typing3 14s steps(30, end);
+}
+.my-info > ul > li:nth-child(4) {
+    width: 30em;
+    animation: typing4 20s steps(30, end);
 }
 .work-comp{
     display:inline-block;
@@ -38,4 +69,23 @@
 }
 .work-info{
     margin-top: 15px !important;
+}
+
+@keyframes typing {
+    from { width: 0 }
+}
+@keyframes typing2 {
+    0%{ width: 0 }
+    40%{ width: 0 }
+    100%{ width: 100 };
+}
+@keyframes typing3 {
+    0%{ width: 0 }
+    60%{ width: 0 }
+    100%{ width: 100 };
+}
+@keyframes typing4 {
+    0%{ width: 0 }
+    70%{ width: 0 }
+    100%{ width: 100 };
 }
