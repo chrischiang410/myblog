@@ -26,28 +26,35 @@
     width: calc(100% - 295px);
     margin: 0 0 0 40px;
 }
+.my-info > div {
+    width: 25px;
+    height: 35px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://angular.io/assets/images/logos/angular/angular.svg)
+}
 .my-info > h2 {
     margin: 0 0 1.1em 0;
 }
-.my-info > ul > li {
+.my-info > ul.typing-list > li {
     white-space: nowrap;
     overflow: hidden;
 }
-.my-info > ul > li:first-child {
+.my-info > ul.typing-list > li:first-child {
     width: 16em;
     animation: typing 2s steps(16, end);
 }
-.my-info > ul > li:nth-child(2) {
+.my-info > ul.typing-list > li:nth-child(2) {
     width: 30em;
-    animation: typing2 8s steps(30, end);
+    animation: typing2 6s steps(30, end);
 }
-.my-info > ul > li:nth-child(3) {
+.my-info > ul.typing-list > li:nth-child(3) {
     width: 30em;
-    animation: typing3 14s steps(30, end);
+    animation: typing3 10s steps(30, end);
 }
-.my-info > ul > li:nth-child(4) {
+.my-info > ul.typing-list > li:nth-child(4) {
     width: 30em;
-    animation: typing4 20s steps(30, end);
+    animation: typing4 15s steps(30, end);
 }
 .work-comp{
     display:inline-block;
@@ -70,7 +77,39 @@
 .work-info{
     margin-top: 15px !important;
 }
-
+.skill-list{
+    margin-top: 0 !important;
+}
+.skill-list > li{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.skill-list > li:first-child{
+    background-image: url(./images/logo/angular-logo.png);
+}
+.skill-list > li:nth-child(2){
+    width: 75px;
+    height: 70px;
+    background-image: url(./images/logo/bootstrap-logo.png);
+}
+.skill-list > li:nth-child(3){
+    margin: 0 5px;
+    width: 50px;
+    height: 70px;
+    background-image: url(./images/logo/css3-logo.png);
+}
+.skill-list > li:nth-child(4){
+    background-image: url(./images/logo/git.logo.png);
+}
+.skill-list > li:nth-child(5){
+    background-image: url(./images/logo/webpack-logo.png);
+}
+.skill-list > li:nth-child(6){
+    background-image: url(./images/logo/Java-logo.jpg);
+}
 @keyframes typing {
     from { width: 0 }
 }
