@@ -105,10 +105,15 @@
     background-image: url(./images/logo/git.logo.png);
 }
 .skill-list > li:nth-child(5){
-    background-image: url(./images/logo/webpack-logo.png);
+    width: 60px;
+    height: 60px;
+    background-image: url(./images/logo/JS-logo.png);
 }
 .skill-list > li:nth-child(6){
     background-image: url(./images/logo/Java-logo.jpg);
+}
+.skill-list > li:nth-child(7){
+    background-image: url(./images/logo/webpack-logo.png);
 }
 @keyframes typing {
     from { width: 0 }
