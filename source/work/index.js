@@ -18,12 +18,27 @@ window.onload = function(){
             title_1.classList.remove("sticky");
         }
 
-        if (window.pageYOffset >= titleOffset + 148) {
+        if (window.pageYOffset >= titleOffset + 128) {
             title_2.classList.add("sticky-2")
         } else {
             title_2.classList.remove("sticky-2");
         }
-        console.info(title_1)
+
+        if (window.pageYOffset >= titleOffset + 334) {
+            title_3.classList.add("sticky-3")
+        } else {
+            title_3.classList.remove("sticky-3");
+        }
+        if (window.pageYOffset >= titleOffset + 540) {
+            title_4.classList.add("sticky-4")
+        } else {
+            title_4.classList.remove("sticky-4");
+        }
+        if (window.pageYOffset >= titleOffset + 752) {
+            title_5.classList.add("sticky-5")
+        } else {
+            title_5.classList.remove("sticky-5");
+        }
     }
     
     window.onscroll = function () {
